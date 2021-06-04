@@ -15,7 +15,7 @@ class TestAPIYandex(unittest.TestCase):
     def test_api_yandex_OK(self):
         self.assertEqual(ya.new_folder(), 200)
 
-    #401, Unauthorized, не правильный токен
+    #401, Unauthorized, неправильный токен
     def test_api_yandex_Unauthorized(self):
         self.assertEqual(ya.new_folder(), 401)
 
@@ -24,7 +24,7 @@ class TestAPIYandex(unittest.TestCase):
         self.assertEqual(ya.new_folder(), 404)
 
     def tearDown(self):
-        print('method teardown')
+        print('method tearDown')
 
 
 if __name__ == '__main__':
